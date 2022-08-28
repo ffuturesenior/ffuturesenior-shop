@@ -11,3 +11,28 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+
+.App{
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+}
+
+
+.header{
+  display: inline-block;
+}
+.main{
+  display: inline-block;
+  flex: 1 1 auto;
+}
+.footer{
+  display: inline-block;
+}
+
+
+.rotate180{
+  transform: rotate(180deg);
+}
