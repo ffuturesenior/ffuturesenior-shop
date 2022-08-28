@@ -71,7 +71,7 @@ export const getOneUserReq=async (id,setFunc,setIsLoading,setIsError)=>{
         try{
             setIsLoading(true)
             const res= await axios.get(`${url}/users/${id}`)
-            //setFunc(res.data)
+            setFunc(res.data)
             console.log('getOneUserReq')
             setIsLoading(false)
         }catch(e){
