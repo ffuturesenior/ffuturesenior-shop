@@ -1,7 +1,7 @@
 import axios from 'axios'
 import { login } from '../redux/reducers/userReducer'
 
-const url='http://localhost:5000/aboba'
+const url='https://shopserver-db-sync.herokuapp.com/aboba'
 
 /*
     firstname:{type:String,required:true},

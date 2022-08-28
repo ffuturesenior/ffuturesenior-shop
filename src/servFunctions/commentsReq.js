@@ -1,7 +1,7 @@
 import axios from 'axios'
 import {notifySucces,notifyError} from '../pages/AddProduct'
 
-const url='http://localhost:5000/aboba'
+const url='https://shopserver-db-sync.herokuapp.com/aboba'
 
 
 ///comment/getByPostId/:id
