@@ -39,7 +39,7 @@ export async function getRequestsToBuyByUserIdReq(userID,setFunc,setIsLoading,se
 export async function approveRequestToBuyReq(id){
     try{
         const res2= await axios.delete(`${url}/requests/${id}`)
-        notifySucces()
+        //notifySucces()
     }catch(e){
         notifyError()
     }

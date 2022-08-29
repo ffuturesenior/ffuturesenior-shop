@@ -7,13 +7,23 @@ import { getOnePostReq } from "../../servFunctions/productRequest";
 const BasketCardItem=({postId})=>{
     const isAuth=useSelector(state=>state.user.isAuth)
     const router=useHistory()
-    const [props,setProps]=useState({})
+    const [props,setProps]=useState({
+        brand: "Samsung",
+        name: "a51",
+        price: "400",
+        textarea: "buy pls",
+        type: "Phone",
+        userId: "63023ab81105edef5787b258",
+        __v: 0,
+        __id: "6304e8bfac6b88ba128dc6a1",
+    })
     const [isLoading,setIsLoading]=useState(true)
     const [isError,setIsError]=useState(false)
 
 
     useEffect(()=>{
-      getOnePostReq(postId,setProps,setIsLoading,setIsError)
+        setIsLoading(true)
+        getOnePostReq(postId,setProps,setIsLoading,setIsError)
     },[])
 
     return(

@@ -5,7 +5,7 @@ import {createProductReq} from '../servFunctions/productRequest'
 
 export const notifySucces=()=>{
         toast.success('🦄 added', {
-            position: "bottom-left",
+            position: "bottom-right",
             autoClose: 3000,
             hideProgressBar: false,
             closeOnClick: true,
@@ -16,7 +16,7 @@ export const notifySucces=()=>{
     }
 export const notifyError=()=>{
         toast.error('🦄 error', {
-            position: "bottom-left",
+            position: "bottom-right",
             autoClose: 3000,
             hideProgressBar: false,
             closeOnClick: true,

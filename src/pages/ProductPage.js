@@ -60,7 +60,7 @@ const ProductPage=()=>{
             formData.append('userId',localStorage.getItem('userID'))
             formData.append('price',productData.price)
             formData.append('count',1)
-            formData.append('sellerId',id)
+            formData.append('sellerId',userId)
             createRequestToBuyReq(formData)
             formData.delete('productId')
             formData.delete('userId')
@@ -80,7 +80,7 @@ const ProductPage=()=>{
     }
 
     const deleteFromBasket=()=>{
-        deleteFromBasketReq(id,setInBasket)
+        deleteFromBasketReq(id,localStorage.getItem('userID'),setInBasket)
     }
 
     const deletePost=()=>{

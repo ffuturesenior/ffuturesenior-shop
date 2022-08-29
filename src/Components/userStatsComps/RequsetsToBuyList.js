@@ -60,7 +60,7 @@ const RequestsToBuyList=()=>{
         setRequests(requests.filter(p=>{
             if(id!=p._id) return p
         })) 
-        approveRequestToBuyReq(id)
+            approveRequestToBuyReq(id)
         }
         
     }

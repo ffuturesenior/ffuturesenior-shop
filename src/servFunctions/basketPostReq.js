@@ -36,9 +36,9 @@ export async function checkBasketPostReq(userId,productId,setFunc){
     }
 }
 
-export async function deleteFromBasketReq(productId,setInBasket){
+export async function deleteFromBasketReq(productId,userId,setInBasket){
     try{
-        const res= await axios.delete(`${url}/BasketPost/${productId}`)
+        const res= await axios.delete(`${url}/BasketPost/deleteBasketPost/${productId}&${userId}`)
         setInBasket(false)
         //notifySucces()
     }catch(e){
@@ -66,7 +66,7 @@ export async function getByUserIdBasketPostsReq(userId,setFunc,setIsLoading,setI
 
 export async function deletefromBasketReq(userId,productId){
     try{
-        const res= await axios.delete(`${url}/BasketPost/deleteBasketPost/${userId}&${productId}`)
+        const res= await axios.delete(`${url}/BasketPost/deleteBasketPost/${productId}&${userId}`)
     }catch(e){
         alert(e.response.data.message)
     }

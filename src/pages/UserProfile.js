@@ -44,7 +44,7 @@ const UserProfile=()=>{
                             </div>
                         </div>
                         <div style={{margin:"0px auto"}}>
-                            <div style={{display:'grid',gridTemplateColumns:"repeat(3,18rem)",gridTemplateRows:"repeat(2,350px)"}}>
+                            <div style={{display:'grid',gridTemplateColumns:"repeat(auto-fit,286px)",gridTemplateRows:"repeat(auto-fit,auto)"}}>
                                 {items.map(p=>
                                     <CardItem props={p}/>   
                                 )} 

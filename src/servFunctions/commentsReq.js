@@ -2,8 +2,7 @@ import axios from 'axios'
 import {notifySucces,notifyError} from '../pages/AddProduct'
 
 const url='https://shopserver-db-sync.herokuapp.com/aboba'
-
-
+//http://localhost:5000/aboba
 ///comment/getByPostId/:id
 
 export async function getCommentsByPostIdReq(id,setFunc,setIsError,setIsLoading){
