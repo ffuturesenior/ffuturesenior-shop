@@ -33,7 +33,7 @@ const Main=()=>{
                                 <div  style={{backgroundColor:'#222d32'}}>
                                     <SideBar items={items} setItems={setItems} setIsLoading={setIsLoading} setIsError={setIsError}/>
                                 </div>
-                                <div >
+                                <div style={{height:'692px',overflow:'auto'}}>
                                     <div style={{display:'grid',gridTemplateColumns:"repeat(auto-fit,286px)",gridTemplateRows:"repeat(auto-fit,auto)"}}>
                                         {items.map(p=>
                                             <CardItem props={p}/>   

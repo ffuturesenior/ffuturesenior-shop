@@ -90,12 +90,12 @@ const RequsestsToCurrent=({productId})=>{
                 {isError?
                     <>err</>
                 :
-                    <>
+                    <div style={{height:'200px',overflowY:"auto"}}>
                     {requests.map(p=>
                         <RequestIcon key={p._id} p={p} Aprove={Aprove}/>
                     )}
                     <ToastContainer/>
-                    </>
+                    </div>
                 }
             </>
         }

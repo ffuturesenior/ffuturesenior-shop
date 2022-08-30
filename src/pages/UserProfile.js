@@ -43,7 +43,7 @@ const UserProfile=()=>{
                                 {userData.caption}
                             </div>
                         </div>
-                        <div style={{margin:"0px auto"}}>
+                        <div style={{height:'692px',overflow:"hidden"}}>
                             <div style={{display:'grid',gridTemplateColumns:"repeat(auto-fit,286px)",gridTemplateRows:"repeat(auto-fit,auto)"}}>
                                 {items.map(p=>
                                     <CardItem props={p}/>   

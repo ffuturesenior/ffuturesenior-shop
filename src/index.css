@@ -36,3 +36,16 @@ code {
 .rotate180{
   transform: rotate(180deg);
 }
+
+::-webkit-scrollbar {
+	width: 0px;
+	height: 10px;
+  }
+
+::-webkit-scrollbar-thumb {
+	background: rgba(0, 0, 0,0);
+  }
+  
+::-webkit-scrollbar-track {
+	background: rgba(0, 0, 0, 0);
+}

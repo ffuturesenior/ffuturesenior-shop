@@ -74,12 +74,12 @@ const RequestsToBuyList=()=>{
                 {isErr?
                     <></>
                 :
-                    <>
+                    <div style={{height:'200px',overflowY:"auto"}}>
                     {requests.map(p=>
                         <RequestIcon p={p} Aprove={Aprove}/>
                     )}
                     <ToastContainer/>
-                    </>
+                    </div>
                 }
             </>
         }
