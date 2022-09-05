@@ -67,7 +67,7 @@ const RequsestsToCurrent=({productId})=>{
             notifyError()
         }else{
             formData.append('income',price)
-            formData.append('date',`${date.getDate()}/${date.getMonth()}`)
+            formData.append('date',`${date.getDate()}/${date.getMonth()+1}`)
             formData.append('productId',productId)
             formData.append('userId',localStorage.getItem('userID'))
             createIncomeByDayReq(formData)
